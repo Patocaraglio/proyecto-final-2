@@ -1,0 +1,46 @@
+@import '../base/listas';
+
+header{
+    nav{
+        display: flex;
+        background-color: nth($colores,1);
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: 450px) {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+        }
+
+        @media screen and (min-width: 451px) and (max-width: 950px) {
+            display: flex;
+        flex-direction: column;
+        }
+        a{
+            img{
+                margin: nth($margin,1); 
+            }
+        }
+        ul{
+            .achicar:hover{
+                transform: scale(0.8);
+                li{
+                    @media screen and (max-width: 450px) {
+                        font-size: 20px;
+                    }
+
+                    @media screen and (min-width: 451px) and (max-width: 950px) {
+                        font-size: 20px;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: 	#FFD700;
+                        font-weight: bold;
+                    }
+                }
+
+            }
+        }
+    }
+}
