@@ -1,0 +1,27 @@
+@import '../base/mixin';
+
+
+.titulos{
+    .trabajos{
+        margin-top: 10px;
+        margin-left: 20px;
+
+        @media screen and (max-width: 450px) {
+        text-align: center;
+        }
+        
+    }
+    h2{
+        margin-top: 30px;
+        border: solid 1px black;
+        background-color: #FFD700;
+    }
+    .obras{
+        @include flex (flex, center, space-around, wrap);
+
+        .obras2{
+            @media screen and (max-width: 450px) {
+            margin: 5px;}
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.tecnicos{
+    .personal{
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        @media screen and (max-width: 450px) {
+        text-align: center;
+        }
+    
+    }
+    .titulo-tecnicos{
+        margin-left: 20px;
+
+    }
+    .matriculados{
+        display: flex;
+        justify-content: space-around;
+        .datos{
+            border: solid 1px #FFD700;
+            background-color: #FFD700;
+
+        }
+    }
+    .servicios{
+        text-align: center;
+        margin-top: 20px;
+    }
+}

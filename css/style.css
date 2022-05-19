@@ -124,4 +124,126 @@ footer div a .agrandar:hover {
   transform: scale(1.5);
 }
 
+main section .navbar .container-fluid .d-flex .form-control {
+  border: solid 2px #FFD700;
+}
+main section .navbar .container-fluid .d-flex .btn {
+  border: solid 2px #FFD700;
+  color: black;
+  background-color: #FFD700;
+}
+main section .insumos {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 450px) {
+  main section .insumos {
+    text-align: center;
+  }
+}
+main section .accordion .accordion-item .accordion-header .accordion-button {
+  background-color: #FFD700;
+}
+main section .accordion .accordion-item .accordion-collapse .accordion-body .row .col .card {
+  width: 200px;
+}
+
+.titulos .trabajos {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+@media screen and (max-width: 450px) {
+  .titulos .trabajos {
+    text-align: center;
+  }
+}
+.titulos h2 {
+  margin-top: 30px;
+  border: solid 1px black;
+  background-color: #FFD700;
+}
+.titulos .obras {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 450px) {
+  .titulos .obras .obras2 {
+    margin: 5px;
+  }
+}
+
+.tecnicos .personal {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 450px) {
+  .tecnicos .personal {
+    text-align: center;
+  }
+}
+.tecnicos .titulo-tecnicos {
+  margin-left: 20px;
+}
+.tecnicos .matriculados {
+  display: flex;
+  justify-content: space-around;
+}
+.tecnicos .matriculados .datos {
+  border: solid 1px #FFD700;
+  background-color: #FFD700;
+}
+.tecnicos .servicios {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contacto .elementos div .formulario {
+  list-style: none;
+  margin-top: 10px;
+  color: grey;
+  text-align: left;
+}
+
+.contacto .contacte {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 450px) {
+  .contacto .contacte {
+    text-align: center;
+  }
+}
+.contacto .elementos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 450px) {
+  .contacto .elementos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.contacto .elementos div .formulario li {
+  background-color: rgba(128, 128, 128, 0.103);
+  border: solid 1px rgba(153, 138, 138, 0.548);
+  padding: 10px;
+}
+.contacto .elementos div .boton {
+  border: solid 1px black;
+  background-color: black;
+  color: #FFD700;
+  width: 80px;
+  margin-left: 320px;
+  margin-top: 10px;
+  padding: 8px;
+  justify-items: center;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,54 @@
+@import '../base/mapas';
+
+main{
+    section{
+        .navbar{
+            .container-fluid{
+                .d-flex{
+                    .form-control{
+                        border: solid 2px #FFD700;
+                    }
+                    .btn{
+                        border: map-get($btn,border);
+                        color: map-get($btn,color);
+                        background-color: map-get($btn,bg-boton);
+                    }
+                }
+            }
+        }
+    }
+    section{
+            .insumos{
+                margin-top: 10px;
+                margin-left: 20px;
+                margin-right: 20px;
+
+                @media screen and (max-width: 450px) {
+                text-align: center;
+                }
+            }
+    }
+    section{
+        .accordion{
+            .accordion-item{
+                .accordion-header{
+                    .accordion-button{
+                        background-color: #FFD700;
+                    }
+                }
+                .accordion-collapse{
+                    .accordion-body{
+                        .row{
+                            .col{
+                                .card{
+                                    width: 200px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
