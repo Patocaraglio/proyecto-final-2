@@ -1,40 +1,23 @@
-header nav {
-  display: flex;
-  background-color: black;
-  justify-content: space-between;
-  align-items: center;
+header nav .container-fluid .navbar-toggler {
+  background-color: #FFD700;
 }
-@media screen and (max-width: 450px) {
-  header nav {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 451px) and (max-width: 950px) {
-  header nav {
-    display: flex;
-    flex-direction: column;
-  }
-}
-header nav a img {
+header nav .container-fluid a img {
   margin: 10px;
 }
-header nav ul .achicar:hover {
+header nav .container-fluid ul .achicar:hover {
   transform: scale(0.8);
 }
 @media screen and (max-width: 450px) {
-  header nav ul .achicar:hover li {
+  header nav .container-fluid ul .achicar:hover li {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 451px) and (max-width: 950px) {
-  header nav ul .achicar:hover li {
+  header nav .container-fluid ul .achicar:hover li {
     font-size: 20px;
   }
 }
-header nav ul .achicar:hover li a {
-  text-decoration: none;
+header nav .container-fluid ul .achicar:hover li a {
   color: #FFD700;
   font-weight: bold;
 }
@@ -42,33 +25,44 @@ header nav ul .achicar:hover li a {
 main .presentacion {
   width: 100%;
   height: 90vh;
-  background: url(../../imagenes/fondo.jpg);
+  background: url(../imagenes/focos.png);
   background-position: center;
   background-repeat: none;
   background-size: cover;
   background-attachment: local;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   flex-direction: column;
   color: #FFD700;
 }
-@media screen and (max-width: 450px) {
-  main .presentacion {
-    text-align: center;
-  }
-}
 @media screen and (min-width: 451px) and (max-width: 950px) {
   main .presentacion {
-    text-align: center;
+    text-align: right;
   }
 }
-main .presentacion h1 {
+main .presentacion .presentacion2 {
+  background-color: rgba(0, 0, 0, 0.589);
+  margin-right: 20px;
+}
+main .presentacion .presentacion2 h1 {
   font-size: 50px;
   font-weight: bolder;
 }
-main .presentacion p {
+@media screen and (max-width: 450px) {
+  main .presentacion .presentacion2 h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+}
+main .presentacion .presentacion2 p {
   font-size: 30px;
+}
+@media screen and (max-width: 450px) {
+  main .presentacion .presentacion2 p {
+    text-align: center;
+    font-size: 20px;
+  }
 }
 main .nosotros {
   margin-top: 100px;
@@ -78,25 +72,6 @@ main .nosotros {
   background-color: #FFD700;
   font-style: oblique;
   padding: 50px;
-}
-main .proveedores {
-  display: flex;
-  justify-content: space-between;
-}
-@media screen and (max-width: 450px) {
-  main .proveedores {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 25px;
-  }
-}
-@media screen and (min-width: 451px) and (max-width: 950px) {
-  main .proveedores {
-    width: 700px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 25px;
-  }
 }
 
 footer {
@@ -111,16 +86,18 @@ footer {
   }
 }
 footer section {
+  display: flex;
+  justify-content: space-around;
   margin-left: 10px;
   color: #FFD700;
 }
-footer div {
+footer .wathsapp {
   position: fixed;
   bottom: 0;
   right: 0;
   margin-right: 10px;
 }
-footer div a .agrandar:hover {
+footer .wathsapp a .agrandar:hover {
   transform: scale(1.5);
 }
 
@@ -144,6 +121,20 @@ main section .insumos {
 }
 main section .accordion .accordion-item .accordion-header .accordion-button {
   background-color: #FFD700;
+}
+@media screen and (max-width: 450px) {
+  main section .accordion .accordion-item .accordion-collapse .accordion-body .row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 950px) {
+  main section .accordion .accordion-item .accordion-collapse .accordion-body .row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 main section .accordion .accordion-item .accordion-collapse .accordion-body .row .col .card {
   width: 200px;
@@ -191,14 +182,45 @@ main section .accordion .accordion-item .accordion-collapse .accordion-body .row
 .tecnicos .matriculados {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 450px) {
+  .tecnicos .matriculados {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .tecnicos .matriculados .datos {
-  border: solid 1px #FFD700;
+  border: solid 1px black;
   background-color: #FFD700;
-}
-.tecnicos .servicios {
   text-align: center;
-  margin-top: 20px;
+  padding: 10px;
+}
+
+.servicios {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+@media screen and (max-width: 450px) {
+  .servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.servicios2 {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+@media screen and (max-width: 450px) {
+  .servicios2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .contacto .elementos div .formulario {
@@ -224,6 +246,13 @@ main section .accordion .accordion-item .accordion-collapse .accordion-body .row
   align-items: center;
 }
 @media screen and (max-width: 450px) {
+  .contacto .elementos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 950px) {
   .contacto .elementos {
     display: flex;
     flex-direction: column;

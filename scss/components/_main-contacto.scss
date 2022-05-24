@@ -22,6 +22,12 @@
         justify-content: center;
         }
 
+        @media screen and (min-width: 451px) and (max-width: 950px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+        
         div{
             .formulario{
                 @extend %formulario;

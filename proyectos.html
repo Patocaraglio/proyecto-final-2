@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="imagenes/MP.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imagenes/m-ico.ico" type="image/x-icon">
     <meta name="description" content="Insumos de electricidad. Servicios Instalaciones, cámaras de seguridad, monitoreo, redes, telefonía. Personal matriculado.">
     <meta name="keywords" content="electricidad, insumos, instalaciones, camaras de seguridad, tv, servicios, servicio, monitoreo, telefonia, personal, cables, disyuntores, termicas">
     <meta property: 'og: type' content="web-site">
@@ -15,41 +15,50 @@
     <meta property: 'og: description' content="Insumos de electricidad. Servicios Instalaciones, cámaras de seguridad, monitoreo, redes, telefonía. Personal matriculado.">
     <title>MP ELECTRICIDAD - Insumos y servicios</title> 
 </head>
+
 <body class="body">
-  <header class="header">
-    <nav>
-        <a href="index.html">
-            <img src="imagenes/LOGO.png" alt="logo" width="200px"> 
-        </a>
-        <ul class="nav">
-          <div class="achicar">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
-          </li>
+  <header class="header"> 
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+              <img src="imagenes/logo.png" alt="logo" width="200px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="imagenes/menu.png" alt="menu" width="30px">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+             <div class="achicar">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                </li>
+             </div>
+             <div class="achicar">
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">PRODUCTOS</a>
+              </li>
+             </div> 
+             <div class="achicar">
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">SERVICIOS</a>
+              </li>
+             </div>  
+             <div class="achicar">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="proyectos.html">PROYECTOS</a>
+              </li>
+             </div> 
+             <div class="achicar">
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+              </li>
+             </div>
           </div>
-          <div class="achicar">
-          <li class="nav-item">
-            <a class="nav-link" href="productos.html">PRODUCTOS</a>
-          </li>
-          </div>
-          <div class="achicar">
-          <li class="nav-item">
-            <a class="nav-link" href="servicios.html">SERVICIOS</a>
-          </li>
-          </div>
-          <div class="achicar">
-          <li class="nav-item">
-            <a class="nav-link" href="proyectos.html">PROYECTOS</a>
-          </li>
-          </div>
-          <div class="achicar">
-          <li class="nav-item">
-              <a class="nav-link" href="contacto.html">CONTACTO</a>
-          </li>
-          </div>
-        </ul>
-    </nav>
-  </header>
+        </div>
+      </nav>
+  </header> 
+
   <main class="titulos">
       <section class="trabajos">
         <h1>NUESTROS TRABAJOS</h1>
@@ -95,20 +104,25 @@
 
   <footer class="footer">
     <section>
+      <div>
         <p>DIR: RIVADAVIA 152 (6271) - DEL CAMPILLO - CORDOBA</p>
         <p>TEL: (03583) 15486868</p>
         <p>E-MAIL: aguileramatias99@gmail.com</p>
+      </div>
+      <div>
+        <a href="https://es-la.facebook.com/" target="_blank">
+          <img class="agrandar" src="imagenes/facebook.png" alt="facebook" width="50 px">
+        </a>
+        <a href="https://www.instagram.com/?hl=es" target="_blank">
+          <img class="agrandar" src="imagenes/instagram.png" alt="instagram" width="50px">
+        </a>
+      </div>
     </section>    
-    <div>
-      <a href="https://es-la.facebook.com/" target="_blank">
-        <img class="agrandar" src="imagenes/facebook.png" alt="facebook" width="50 px">
-      </a>
-      <a href="https://www.instagram.com/?hl=es" target="_blank">
-        <img class="agrandar" src="imagenes/instagram.png" alt="instagram" width="50px">
-      </a>
-      <a href="https://www.whatsapp.com/?lang=es" target="_blank" >
-        <img class="agrandar" src="imagenes/whatsapp.png" alt="whatsapp" width="50px">
-      </a>  
+    
+    <div class="wathsapp">
+        <a href="https://www.whatsapp.com/?lang=es" target="_blank" >
+            <img class="agrandar" src="imagenes/whatsapp.png" alt="whatsapp" width="50px">
+        </a>    
     </div>
   </footer> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
