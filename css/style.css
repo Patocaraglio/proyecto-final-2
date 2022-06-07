@@ -226,7 +226,7 @@ main section .accordion .accordion-item .accordion-collapse .accordion-body .row
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: #FFD700;
+  color: black;
 }
 @media screen and (max-width: 450px) {
   .contacto .elementos {
